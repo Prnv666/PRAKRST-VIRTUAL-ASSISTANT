@@ -1,0 +1,66 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: black;
+}
+img{
+    width: 300px;
+    margin-bottom: 30px;
+    animation: imgAnim infinite 2s 0.2s  alternate forwards;
+    
+}
+
+@keyframes imgAnim {
+    0% {
+        scale: 50%;
+    }
+    100% {
+        scale: 100%;
+    }
+    
+}
+
+.btn-box{
+    background-image: url('./img/ai-1.gif');
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color: white;
+    padding: 13px;
+    border: 5px solid #008CF7;
+    border-radius: 50%;
+    font-size: 80px;
+    color: #008CF7;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 140, 247, 0.7), 
+        0 0 30px rgba(0, 140, 247, 0.5), 
+        0 0 45px rgba(0, 140, 247, 0.3);
+
+    /* overflow: hidden; */
+}
+
+
+
+button:hover {
+    box-shadow: 0 0 25px rgba(0, 140, 247, 1), 
+        0 0 50px rgba(0, 140, 247, 0.7), 
+        0 0 75px rgba(0, 140, 247, 0.5);
+    transform: scale(1.05);
+}
